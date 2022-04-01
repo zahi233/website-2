@@ -1,0 +1,133 @@
+* {
+    margin: 2;
+    padding: 2;
+    
+}
+
+body {
+    
+
+    
+    font-size: 16px;
+    font-family: sans-serif
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+
+:root{
+    --main-radius:4px;
+    --main-padding:4px; 
+}
+
+.wrapper {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.4fr 0.4fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+        "logo header header header"
+        "nav nav nav nav"
+        "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer";
+    grid-gap: 0.2rem; 
+}
+
+
+#logo{
+    background: #a7ffeb;
+    grid-area: logo;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    display: flex;
+    align-items: flex-end
+}
+
+#logo > img{
+    object-fit: cover;
+    width: 100%
+}
+
+header{
+    background: #a7ffeb;
+    grid-area: header;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    font-size: 3rem;
+}
+
+nav{
+    background: #a7ffeb;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+main{
+    background: #84ffff;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#sidebar{
+    background: #18ffff;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content1{
+    background: #6fffd2;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content2{
+    background: #64ffda;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content3{
+    background: #73ffba;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+footer{
+    background: #1de9b6;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.img{
+width: 300px;
+}
+
+@media (max-width:550px){
+    .wrapper{
+        grid-template-columns: 0.4fr 1fr; 
+        grid-template-rows: 0.6fr 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr; 
+        grid-template-areas: 
+            "logo header"
+            "nav nav"
+            "sidebar sidebar"
+            "main main"
+            "content1 content1"
+            "content2 content2"
+            "content3 content3"
+            "footer footer"
+    }
+    
+    header{
+    background: #a7ffeb;
+    grid-area: header;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    font-size: 2rem;
+}
+}
