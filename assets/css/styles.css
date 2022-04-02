@@ -4,15 +4,6 @@
     
 }
 
-body {
-    
-
-    
-    font-size: 16px;
-    font-family: sans-serif
-    background-color: rgba(255, 0, 0, 0.6);
-}
-
 
 :root{
     --main-radius:4px;
@@ -30,11 +21,15 @@ body {
         "sidebar content1 content2 content3"
         "sidebar footer footer footer";
     grid-gap: 0.2rem; 
+    background-image: url(2020%20art.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 
 #logo{
-    background: #a7ffeb;
+    background: rgba(218,215,45,0.8);
     grid-area: logo;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -48,7 +43,7 @@ body {
 }
 
 header{
-    background: #a7ffeb;
+    background: rgba(218,215,45,0.8);
     grid-area: header;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -56,21 +51,21 @@ header{
 }
 
 nav{
-    background: #a7ffeb;
+    background: rgba(218,215,45,0.3);
     grid-area: nav;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 main{
-    background: #84ffff;
+    background: rgba(0,0,0,0.7);
     grid-area: main;
-    border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    color: white;
 }
 
 #sidebar{
-    background: #18ffff;
+    background: rgba(218,150,45,0.5);
     grid-area: sidebar;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -81,6 +76,8 @@ main{
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    background-image: url(GJ+full+work+view+to+majura+c.jpg);
+    background-size: cover;
 }
 
 #content2{
@@ -106,6 +103,25 @@ footer{
 
 .img{
 width: 300px;
+}
+
+
+.readmore1 {
+    text-align-last: center;
+}
+
+.yellowbtn {
+    border-radius: 5px;
+    background-color: rgba(218,215,45,0.8);
+}
+
+.dark {
+    display: block;
+    height: 25px;
+    background-color: rgba(112,115,9,0.6);
+    color: white;
+    font-size: 1.2rem;
+    
 }
 
 @media (max-width:550px){
