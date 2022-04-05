@@ -13,18 +13,20 @@
 .wrapper {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.4fr 0.4fr 1.5fr 1.2fr 0.8fr;
+    grid-template-rows: 0.2fr 0.5fr 5fr 5fr 6fr 0.8fr;
     grid-template-areas: 
         "logo header header header"
         "nav nav nav nav"
-        "sidebar main main main"
-        "sidebar content1 content2 content3"
-        "sidebar footer footer footer";
+        "blank2 blank2 blank2 blank2"
+        "main main main blank"
+        "sidebar content1 content1 content3"
+        "footer footer footer footer";
     grid-gap: 0.2rem; 
-    background-image: url(2020%20art.jpg);
+    background-image: url(2020%20art%202.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
+
 }
 
 
@@ -47,7 +49,10 @@ header{
     grid-area: header;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
     font-size: 3rem;
+    
 }
 
 nav{
@@ -61,7 +66,10 @@ main{
     background: rgba(0,0,0,0.7);
     grid-area: main;
     padding-top: var(--main-padding);
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
     color: white;
+    font-size: 1.2rem;
 }
 
 #sidebar{
@@ -69,36 +77,45 @@ main{
     grid-area: sidebar;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    text-align-last: center;
 }
 
 #content1{
-    background: #6fffd2;
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    padding-left: var(--main-padding);
     background-image: url(GJ+full+work+view+to+majura+c.jpg);
     background-size: cover;
 }
 
-#content2{
-    background: #64ffda;
-    grid-area: content2;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-}
-
 #content3{
-    background: #73ffba;
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    padding-left: var(--main-padding);
+    background-image: url(1080X1080+INSTA_V0.3-05.png);
+    background-size: cover;
 }
 
 footer{
-    background: #1de9b6;
+    background: rgba(0,0,0,0.6);
+    color: white;
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+}
+
+.blank{
+    grid-area: blank;
+}
+
+.blank2{
+    grid-area: blank2;
 }
 
 .img{
@@ -115,35 +132,64 @@ width: 300px;
     background-color: rgba(218,215,45,0.8);
 }
 
+.donatebtn{
+    border-radius: 5px;
+    background-color: rgba(218,215,45,0.8);
+    font-size: 2rem;
+}
+
 .dark {
     display: block;
-    height: 25px;
+    height: 40px;
     background-color: rgba(112,115,9,0.6);
     color: white;
     font-size: 1.2rem;
     
 }
 
+.donate {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+    
+}
+
 @media (max-width:550px){
     .wrapper{
         grid-template-columns: 0.4fr 1fr; 
-        grid-template-rows: 0.6fr 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr; 
+        grid-template-rows: 0.1fr 0.1fr 1fr 1fr 2fr 0.5fr 0.2fr;  
         grid-template-areas: 
             "logo header"
             "nav nav"
-            "sidebar sidebar"
             "main main"
             "content1 content1"
-            "content2 content2"
             "content3 content3"
+            "sidebar sidebar"
             "footer footer"
+            
+    }
+}    
+
+@media (max-width:550px){
+    #content1 {
+         background-image: url(KD+starboard.jpg);
+    background-size: cover;
+    }
+            
     }
     
+    
     header{
-    background: #a7ffeb;
+    background: rgba(218,215,45,0.8);
     grid-area: header;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     font-size: 2rem;
 }
+
+
+@media (max-width:550px){
+    main{
+        font-size: 1rem;
+    }
 }
