@@ -13,19 +13,17 @@
 .wrapper {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.2fr 0.5fr 5fr 5fr 6fr 0.8fr;
+    grid-template-rows: 0.2fr 0.5fr 2fr 6fr 0.8fr;
     grid-template-areas: 
         "logo header header header"
         "nav nav nav nav"
         "blank2 blank2 blank2 blank2"
-        "main main main blank"
-        "sidebar content1 content1 content3"
+        "main main main main"
         "footer footer footer footer";
-    grid-gap: 0.5rem; 
-    background-image: url(2020%20art%202.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+    grid-gap: 0.5rem;
+    background-image: url(COVID.jpg);
+    background-size: contain;
+    
 
 }
 
@@ -65,9 +63,7 @@ nav{
 main{
     background: rgba(0,0,0,0.8);
     grid-area: main;
-    padding-top: var(--main-padding);
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
+    padding: var(--main-padding) var(--main-padding) 0 var(--main-padding); 
     color: white;
     font-size: 1.2rem;
 }
@@ -125,28 +121,17 @@ width: 300px;
 
 .readmore1 {
     text-align-last: center;
-    
 }
 
 .yellowbtn {
-    background-color: rgba(218,215,45,0.8);
-    padding: 4px 10px;
-    font-size: 1rem;
-    text-decoration: none;
-    color: black; 
     border-radius: 5px;
-    box-shadow: 5px 5px 5px black;
+    background-color: rgba(218,215,45,0.8);
 }
 
 .donatebtn{
-    background-color: rgba(218,215,45,0.8);
-    padding: 15px 25px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: black; 
     border-radius: 5px;
-    box-shadow: 5px 5px 5px black
-    
+    background-color: rgba(218,215,45,0.8);
+    font-size: 2rem;
 }
 
 .dark {
@@ -174,7 +159,14 @@ width: 300px;
     cursor: pointer;
 }
 
-
+.btn-2 {
+  background-color: rgba(218,215,45,0.8);
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+    cursor: pointer;
+}
 
 .dropdown-content {
   display: none;
@@ -207,26 +199,16 @@ width: 300px;
 @media (max-width:550px){
     .wrapper{
         grid-template-columns: 0.4fr 1fr; 
-        grid-template-rows: 0.1fr 0.1fr 3.7fr 4fr 4fr 2fr 0.2fr;  
+        grid-template-rows: 0.1fr 0.1fr 0.3fr 0.2fr;  
         grid-template-areas: 
             "logo header"
             "nav nav"
+            "blank2 blank2"
             "main main"
-            "content1 content1"
-            "content3 content3"
-            "sidebar sidebar"
             "footer footer"
             
     }
-}    
-
-@media (max-width:550px){
-    #content1 {
-         background-image: url(KD+starboard.jpg);
-    background-size: cover;
-    }
-            
-    }
+}   
     
     
     header{
