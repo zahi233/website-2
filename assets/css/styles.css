@@ -1,28 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 * {
     margin: 2;
     padding: 2;
-    
+
 }
 
 
-:root{
-    --main-radius:4px;
-    --main-padding:4px; 
+:root {
+    --main-radius: 4px;
+    --main-padding: 4px;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 
 .wrapper {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 0.5fr 5fr 5fr 6fr 0.8fr;
-    grid-template-areas: 
+    grid-template-areas:
         "logo header header header"
         "nav nav nav nav"
         "blank2 blank2 blank2 blank2"
         "main main main blank"
         "sidebar content1 content1 content3"
         "footer footer footer footer";
-    grid-gap: 0.5rem; 
-    background-image: url(2020%20art%202.jpg);
+    grid-gap: 0.5rem;
+    background-image: url(images/2020%20art%202.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,8 +37,8 @@
 }
 
 
-#logo{
-    background: rgba(218,215,45,0.8);
+#logo {
+    background: rgba(218, 215, 45, 0.8);
     grid-area: logo;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -39,176 +46,172 @@
     align-items: flex-end
 }
 
-#logo > img{
+#logo > img {
     object-fit: cover;
     width: 100%
 }
 
-header{
-    background: rgba(218,215,45,0.8);
+header {
+    background: rgba(218, 215, 45, 0.8);
     grid-area: header;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     padding-left: var(--main-padding);
     padding-right: var(--main-padding);
     font-size: 3rem;
-    
+
 }
 
-nav{
-    background: rgba(218,215,45,0.3);
+nav {
+    background: rgba(218, 215, 45, 0.3);
     grid-area: nav;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
-main{
-    background: rgba(0,0,0,0.8);
+main {
+    background: rgba(0, 0, 0, 0.8);
     grid-area: main;
-    padding-top: var(--main-padding);
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
+    padding: var(--main-padding) var(--main-padding) 0 var(--main-padding);
     color: white;
     font-size: 1.2rem;
 }
 
-#sidebar{
-    background: rgba(218,150,45,0.5);
+#sidebar {
+    background: rgba(218, 150, 45, 0.5);
     grid-area: sidebar;
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
+    padding: var(--main-padding) var(--main-padding) 0 var(--main-padding);
     text-align-last: center;
 }
 
-#content1{
+#content1 {
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     padding-left: var(--main-padding);
-    background-image: url(GJ+full+work+view+to+majura+c.jpg);
+    background-image: url(images/GJ+full+work+view+to+majura+c.jpg);
     background-size: cover;
 }
 
-#content3{
+#content3 {
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     padding-left: var(--main-padding);
-    background-image: url(1080X1080+INSTA_V0.3-05.png);
+    background-image: url(images/1080X1080+INSTA_V0.3-05.png);
     background-size: cover;
 }
 
-footer{
-    background: rgba(0,0,0,0.6);
+footer {
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     grid-area: footer;
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
+    padding: var(--main-padding) var(--main-padding) 0 var(--main-padding);
 }
 
-.blank{
+.blank {
     grid-area: blank;
 }
 
-.blank2{
+.blank2 {
     grid-area: blank2;
 }
 
-.img{
-width: 300px;
+.img {
+    width: 300px;
 }
 
 
 .readmore1 {
     text-align-last: center;
-    
+
 }
 
 .yellowbtn {
-    background-color: rgba(218,215,45,0.8);
+    background-color: rgba(218, 215, 45, 0.8);
     padding: 4px 10px;
     font-size: 1rem;
     text-decoration: none;
-    color: black; 
+    color: black;
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
 }
 
-.donatebtn{
-    background-color: rgba(218,215,45,0.8);
+.donatebtn {
+    background-color: rgba(218, 215, 45, 0.8);
     padding: 15px 25px;
     font-size: 1.5rem;
     text-decoration: none;
-    color: black; 
+    color: black;
     border-radius: 5px;
     box-shadow: 5px 5px 5px black
-    
 }
 
 .dark {
     display: block;
     height: 40px;
-    background-color: rgba(112,115,9,0.6);
+    background-color: rgba(112, 115, 9, 0.6);
     color: white;
     font-size: 1.2rem;
-    
+
 }
 
 .donate {
     font-size: 2rem;
     color: white;
     text-shadow: 2px 2px 5px #000;
-    
+
 }
 
 .dropbtn {
-  background-color: rgba(218,215,45,0.8);
-  color: white;
-  padding: 10px;
-  font-size: 15px;
-  border: none;
+    background-color: rgba(218, 215, 45, 0.8);
+    color: white;
+    padding: 2px;
+    font-size: 15px;
+    border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(218,215,45,0.4);
-  min-width: 85px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: rgba(218, 215, 45, 0.4);
+    min-width: 40px;
+    max-height: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 15px;
 }
 
 .dropdown-content div {
-  padding: 10px 5px;
+    padding: 5px 5px;
 }
 
 .dropdown-content div:hover {
-  background-color: #eaeaea;
+    background-color: #eaeaea;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: white;
+    background-color: white;
     color: gold;
 }
 
 
 
-@media (max-width:550px){
-    .wrapper{
-        grid-template-columns: 0.4fr 1fr; 
-        grid-template-rows: 0.1fr 0.1fr 3.7fr 4fr 4fr 2fr 0.2fr;  
-        grid-template-areas: 
+@media (max-width:550px) {
+    .wrapper {
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr 4.2fr 4fr 4fr 2fr 0.2fr;
+        grid-template-areas:
             "logo header"
             "nav nav"
             "main main"
@@ -216,30 +219,24 @@ width: 300px;
             "content3 content3"
             "sidebar sidebar"
             "footer footer"
-            
-    }
-}    
 
-@media (max-width:550px){
+    }
+
     #content1 {
-         background-image: url(KD+starboard.jpg);
-    background-size: cover;
+        background-image: url(KD+starboard.jpg);
+        background-size: cover;
     }
-            
+
+    header {
+        background: rgba(218, 215, 45, 0.8);
+        grid-area: header;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        font-size: 2rem;
     }
-    
-    
-    header{
-    background: rgba(218,215,45,0.8);
-    grid-area: header;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    font-size: 2rem;
-}
 
-
-@media (max-width:550px){
-    main{
+    main {
         font-size: 1rem;
     }
+
 }
