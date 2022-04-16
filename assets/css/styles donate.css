@@ -207,29 +207,34 @@ footer {
 @media (max-width:550px) {
     .wrapper {
         grid-template-columns: 0.4fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 0.3fr 0.2fr 0.1fr;
+        grid-template-rows: 0.02fr 0.1fr 0.3fr 0.2fr 0.1fr;
         grid-template-areas:
             "logo header"
             "nav nav"
             "blank2 blank2"
             "main main"
             "footer footer"
+            background-image: url(images/2020%20art%202.jpg);
+        background-size: cover;
+
 
     }
-}
 
 
-header {
-    background: rgba(218, 215, 45, 0.8);
-    grid-area: header;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    font-size: 2rem;
-}
+    header {
+        background: rgba(218, 215, 45, 0.8);
+        grid-area: header;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        font-size: 1.2rem;
+    }
 
-
-@media (max-width:550px) {
     main {
         font-size: 1rem;
     }
+
+    .img {
+        width: 150px;
+    }
+
 }

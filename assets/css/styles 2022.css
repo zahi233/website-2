@@ -20,16 +20,15 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.2fr 2fr 6fr 0.8fr;
+    grid-template-rows: 0.2fr 0.2fr 6fr 0.8fr;
     grid-template-areas:
         "logo header header header"
         "nav nav nav nav"
-        "blank2 blank2 blank2 blank2"
         "main main main main"
         "footer footer footer footer";
     grid-gap: 0.5rem;
-    background-image: url(images/COVID.jpg);
-    background-size: contain;
+    background-image: url(images/2020%20art%202.jpg);
+    background-size: cover;
 
 
 }
@@ -208,12 +207,10 @@ footer {
 @media (max-width:550px) {
     .wrapper {
         grid-template-columns: 0.4fr 1fr;
-        grid-template-rows: 0.02fr 0.1fr 0.2fr 0.2fr 0.1fr;
+        grid-template-rows: 0.02fr 0.1fr 0.2fr 0.1fr;
         grid-template-areas:
             "logo header"
-            "nav nav"
-            "blank2 blank2"
-            "main main"
+            "nav nav""main main"
             "footer footer"
 
     }
