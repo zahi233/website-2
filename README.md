@@ -19,4 +19,6 @@ Consistent with what users expect from sites in general, as discussed in class, 
 
 In the nav bar, I had initially made a dropdown menu from a button saying "festivals", but I struggled so much to make the dropdown options successfully link to another html because of errors, so I replaced the button with 2022 and just linked to a page about 2022 festival information. 
 
+To finish off the site I ran all of my html pages through W3C validation, which prompted me to make some changes such as what was allowed to be a child of a div container and reminded me to add some alt texts for images that I had missed. I then committed and pushed my code, to download it from my github link and test it to check that it was functional.
+
 To conclude, I took a path of choosing a theme, which I attempted to make simplistic but I think could look much more attractive and simple, and used it across the site. I tried to think from the perspective of a website user to make logical decisions about how the site can be consumed and navigated in.
